@@ -174,6 +174,11 @@ const Navbar = () => {
       ]
     },
     {
+      name: 'Blog',
+      type: 'link',
+      href: '/blog'
+    },
+    {
       name: 'Contact Us',
       type: 'link',
       href: '/contact-us'

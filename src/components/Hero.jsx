@@ -21,9 +21,10 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="max-w-xl md:pl-12"
         >
+
           <h1 className="text-[#222222] font-poppins font-bold text-[35px] leading-[50px] mb-6">
-            Your First Step Towards <br />
-            Business Success
+            Business Registration & <br />
+            Tax Filing Services in Chennai
           </h1>
           
           <p className="text-[#585858] font-poppins font-normal text-[16px] leading-[20px] mb-10">

@@ -1,40 +1,57 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ChevronRight, PhoneCall, BarChart3, ShieldCheck, TrendingUp } from 'lucide-react';
 
 const steps = [
-  { id: 1, title: 'Contact us', desc: 'Contact us to boost your brand visibility.' },
-  { id: 2, title: 'Consult', desc: 'Always available to answer your questions.' },
-  { id: 3, title: 'Place order', desc: 'Fill our package today to proceed.' },
-  { id: 4, title: 'Payment', desc: 'Secure payment methods for all types of banking.' }
+  { 
+    id: 1, 
+    title: 'Strategic Consultation', 
+    desc: 'Personalized sessions to identify the best legal structure and growth path for your enterprise.',
+    icon: PhoneCall
+  },
+  { 
+    id: 2, 
+    title: 'Process Optimization', 
+    desc: 'Streamlining documentation and filings to ensure zero delays in registration and compliance.',
+    icon: BarChart3
+  },
+  { 
+    id: 3, 
+    title: 'Regulatory Compliance', 
+    desc: 'Comprehensive handling of GST, Income Tax, SEBI, and Companies Act regulations.',
+    icon: ShieldCheck
+  },
+  { 
+    id: 4, 
+    title: 'Professional Advisory', 
+    desc: 'Expert insights into fundraising, financial reporting, and sustainable business scaling.',
+    icon: TrendingUp
+  }
 ];
 
 const Solutions = () => {
-  return (
-    <section className="section-padding bg-brand-peach relative overflow-hidden">
-      {/* Decorative Dots */}
-      <div className="absolute top-10 right-10 opacity-10">
-        {[...Array(8)].map((_, i) => (
-          <div key={i} className="flex gap-2 mb-2">
-            {[...Array(2)].map((_, j) => (
-              <div key={j} className="w-2 h-2 bg-brand-orange rounded-full" />
-            ))}
-          </div>
-        ))}
-      </div>
+  const headingStyle = "font-sans font-bold text-[30px] leading-[45px] text-[#222222] tracking-tight";
+  const subHeadingStyle = "font-sans font-extrabold text-[18px] text-[#222222] tracking-tight";
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        {/* Left Side - Image */}
+  return (
+    <section className="py-24 bg-[#F9F9F9] relative overflow-hidden font-sans">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-20 items-center">
+        {/* Left Side - Illustration/Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="relative"
         >
-          <img 
-            src="https://img.freepik.com/free-vector/man-sitting-sofa-with-laptop-freelance-concept_1133-393.jpg" 
-            alt="Step Illustration" 
-            className="w-full h-auto rounded-3xl"
-          />
+          <div className="aspect-square relative overflow-hidden group">
+            <img 
+              src="/Expert.png" 
+              alt="Business Solutions" 
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+          {/* Decorative Block */}
+          <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-[#DB3269] -z-10" />
         </motion.div>
 
         {/* Right Side - Content */}
@@ -43,28 +60,30 @@ const Solutions = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-brand-dark mb-4">Simple Solutions!</h2>
-          <p className="text-gray-500 mb-10 max-w-md">
-            We understand that no two businesses are alike. That's why we take the time to understand.
+          <h2 className={`${headingStyle} mb-6`}>Expert Solutions for Business Growth</h2>
+          <p className="text-gray-600 mb-12 max-w-lg leading-relaxed">
+            We simplify complex regulatory and financial processes, allowing you to focus on what matters most—scaling your business with confidence.
           </p>
 
-          <div className="space-y-6 mb-12">
+          <div className="space-y-8 mb-12">
             {steps.map((step) => (
               <div key={step.id} className="flex gap-6 group">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-orange text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-brand-orange/20 group-hover:scale-110 transition-transform">
-                  {step.id}
+                <div className="flex-shrink-0 w-12 h-12 bg-white border border-gray-100 text-[#DB3269] flex items-center justify-center font-bold text-lg shadow-sm group-hover:bg-[#DB3269] group-hover:text-white transition-all duration-300">
+                  <step.icon size={24} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-brand-dark mb-1">{step.title}</h3>
-                  <p className="text-gray-500 text-sm">{step.desc}</p>
+                  <h3 className={`${subHeadingStyle} mb-1 group-hover:text-[#DB3269] transition-colors`}>{step.title}</h3>
+                  <p className="text-gray-500 text-[14px] leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="flex gap-4">
-            <button className="btn-primary">Get Started</button>
-            <button className="px-8 py-3 font-bold text-brand-dark hover:text-brand-orange transition-colors">Read more</button>
+          <div className="flex items-center gap-8">
+            <button className="bg-[#222222] text-white px-8 py-3 font-bold uppercase tracking-widest text-[12px] hover:bg-[#DB3269] transition-all">Get Started Today</button>
+            <button className="flex items-center gap-2 font-bold text-[12px] uppercase tracking-widest text-[#222222] hover:text-[#DB3269] transition-colors">
+              Our Process <ChevronRight size={16} />
+            </button>
           </div>
         </motion.div>
       </div>

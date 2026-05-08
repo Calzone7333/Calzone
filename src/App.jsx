@@ -5,8 +5,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Solutions from './components/Solutions';
 import Agency from './components/Agency';
-import Testimonials from './components/Testimonials';
-import CTA from './components/CTA';
+
 import Footer from './components/Footer';
 
 // Pages
@@ -71,6 +70,8 @@ import IndAs from './pages/IndAs';
 import ValuationMA from './pages/ValuationMA';
 import TaxationMA from './pages/TaxationMA';
 import Contact from './pages/Contact';
+import BlogPage from './pages/BlogPage';
+import BlogPost from './pages/BlogPost';
 
 const Home = () => (
   <>
@@ -78,8 +79,7 @@ const Home = () => (
     <Services />
     <Solutions />
     <Agency />
-    <Testimonials />
-    <CTA />
+
   </>
 );
 
@@ -151,6 +151,8 @@ function App() {
           <Route path="/valuation-mergers-acquisitions" element={<ValuationMA />} />
           <Route path="/taxation-mergers-acquisitions" element={<TaxationMA />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
         </Routes>
       </main>
       <Footer />

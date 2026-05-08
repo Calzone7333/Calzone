@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronRight, Check, Plus, Minus, Users, Landmark, ShieldCheck, FileText, BarChart3, TrendingUp, Calculator, Clock, Zap, Monitor, Laptop, Globe, HeartPulse, UserCheck, Shield } from 'lucide-react';
+import { ChevronRight, Check, Plus, Minus, Users, Landmark, ShieldCheck, FileText, BarChart3, TrendingUp, Calculator, Clock, Zap, Monitor, Laptop, Globe, HeartPulse, UserCheck, Shield, Scale } from 'lucide-react';
 
 const PayrollServices = () => {
   useEffect(() => {
@@ -173,8 +173,8 @@ const PayrollServices = () => {
               {[
                 { title: 'Automatic Payslips', desc: 'Secure and timely distribution of electronic payslips.', icon: FileText },
                 { title: 'Hassle-Free Processing', desc: 'Accurate salary calculation and direct disbursement.', icon: Zap },
-                { title: 'Compliance Management', desc: 'Full adherence to TDS, EPF, ESI, and PT regulations.', icon: Scale ?? ShieldCheck },
-                { title: 'Benefits Management', desc: 'Allowances, reimbursements, and incentive processing.', icon: HeartPulse ?? Gift },
+                { title: 'Compliance Management', desc: 'Full adherence to TDS, EPF, ESI, and PT regulations.', icon: Scale },
+                { title: 'Benefits Management', desc: 'Allowances, reimbursements, and incentive processing.', icon: HeartPulse },
                 { title: 'Reports & Analytics', desc: 'Detailed financial reports for better decision-making.', icon: BarChart3 },
                 { title: 'Cloud-Based Access', desc: 'Access your payroll data anytime, anywhere securely.', icon: Globe }
               ].map((item, i) => (
