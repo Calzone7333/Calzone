@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Shield, Target, Users2 } from 'lucide-react';
 
@@ -37,7 +38,12 @@ const Agency = () => {
             ))}
           </div>
 
-          <button className="bg-[#DB3269] text-white px-8 py-3 font-bold uppercase tracking-widest text-[12px] hover:bg-[#222222] transition-all">Learn More About Us</button>
+          <Link 
+            to="/contact-us"
+            className="bg-[#DB3269] text-white px-8 py-3 font-bold uppercase tracking-widest text-[12px] hover:bg-[#222222] transition-all inline-block"
+          >
+            Learn More About Us
+          </Link>
         </motion.div>
 
         {/* Right Side - Image/Illustration */}

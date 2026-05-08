@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, FileText, Check, Landmark, Users, Zap, Building, Target, Scale, ShieldCheck } from 'lucide-react';
 
@@ -248,13 +249,12 @@ const Services = () => {
                         ))}
                       </ul>
                     </div>
-                    <motion.a 
-                      href={service.link}
-                      whileHover={{ x: 5 }}
+                    <Link 
+                      to={service.link}
                       className="inline-flex items-center gap-3 mt-10 text-[#DB3269] font-bold uppercase tracking-widest text-[13px] border-b-2 border-[#DB3269] pb-1 hover:text-[#222222] hover:border-[#222222] transition-colors"
                     >
                       Learn More <ChevronRight size={16} />
-                    </motion.a>
+                    </Link>
                   </div>
                 </div>
               ))}

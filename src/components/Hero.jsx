@@ -33,7 +33,10 @@ const Hero = () => {
           </p>
 
           <div className="mb-16">
-            <button className="bg-[#DB3269] text-white px-8 py-3 rounded-full font-bold text-base hover:bg-[#be185d] transition-all transform hover:scale-105 active:scale-95">
+            <button 
+              onClick={() => document.getElementById('popular_services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-[#DB3269] text-white px-8 py-3 rounded-full font-bold text-base hover:bg-[#be185d] transition-all transform hover:scale-105 active:scale-95"
+            >
               Choose your service
             </button>
           </div>

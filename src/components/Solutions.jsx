@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ChevronRight, PhoneCall, BarChart3, ShieldCheck, TrendingUp } from 'lucide-react';
 
@@ -80,8 +81,16 @@ const Solutions = () => {
           </div>
 
           <div className="flex items-center gap-8">
-            <button className="bg-[#222222] text-white px-8 py-3 font-bold uppercase tracking-widest text-[12px] hover:bg-[#DB3269] transition-all">Get Started Today</button>
-            <button className="flex items-center gap-2 font-bold text-[12px] uppercase tracking-widest text-[#222222] hover:text-[#DB3269] transition-colors">
+            <Link 
+              to="/contact-us"
+              className="bg-[#222222] text-white px-8 py-3 font-bold uppercase tracking-widest text-[12px] hover:bg-[#DB3269] transition-all"
+            >
+              Get Started Today
+            </Link>
+            <button 
+              onClick={() => document.getElementById('popular_services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="flex items-center gap-2 font-bold text-[12px] uppercase tracking-widest text-[#222222] hover:text-[#DB3269] transition-colors"
+            >
               Our Process <ChevronRight size={16} />
             </button>
           </div>
