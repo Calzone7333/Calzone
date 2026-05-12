@@ -148,7 +148,7 @@ const Footer = () => {
             <img src="/web-logo.png" alt="Clazone Logo" className="h-10 w-auto object-contain" />
           </div>
           <div className="flex gap-4">
-            <a href="https://www.linkedin.com/company/calzone-financial-solutions" target="_blank" rel="noopener noreferrer" className="hover:text-[#DB3269] transition-colors"><LinkedinIcon size={20} /></a>
+            <a href="https://www.linkedin.com/company/calzone-financial-solution/" target="_blank" rel="noopener noreferrer" className="hover:text-[#DB3269] transition-colors"><LinkedinIcon size={20} /></a>
             <a href="https://www.instagram.com/calzone_financialsolutions/" target="_blank" rel="noopener noreferrer" className="hover:text-[#DB3269] transition-colors"><InstagramIcon size={20} /></a>
             <a href="https://www.facebook.com/CalzoneFinancialSolution/" target="_blank" rel="noopener noreferrer" className="hover:text-[#DB3269] transition-colors"><FacebookIcon size={20} /></a>
             <a href="https://x.com/calzonestartup" target="_blank" rel="noopener noreferrer" className="hover:text-[#DB3269] transition-colors"><TwitterIcon size={20} /></a>
@@ -195,7 +195,7 @@ const Footer = () => {
       {/* Bottom Copyright Bar */}
       <div className="bg-[#DB3269] py-6 px-6">
         <div className="max-w-7xl mx-auto text-center space-y-1">
-          <p className="text-white text-[14px]">© 2025 calzone.co.in. All Rights Reserved</p>
+          <p className="text-white text-[14px]">© 2026 calzone.co.in. All Rights Reserved</p>
           <p className="text-white/80 text-[11px]">
             powered by <a href="https://webtel.in/" target="_blank" rel="noopener noreferrer" className="hover:underline">Webtel Electrosoft Ltd.</a>
           </p>
