@@ -148,7 +148,7 @@ const Footer = () => {
             <img src="/web-logo.png" alt="Clazone Logo" className="h-10 w-auto object-contain" />
           </div>
           <div className="flex gap-4">
-            <a href="https://www.linkedin.com/company/calzone-financial-solution/" target="_blank" rel="noopener noreferrer" className="hover:text-[#DB3269] transition-colors"><LinkedinIcon size={20} /></a>
+            <a href="https://www.linkedin.com/company/calzone-financial-solutions/" target="_blank" rel="noopener noreferrer" className="hover:text-[#DB3269] transition-colors"><LinkedinIcon size={20} /></a>
             <a href="https://www.instagram.com/calzone_financialsolutions/" target="_blank" rel="noopener noreferrer" className="hover:text-[#DB3269] transition-colors"><InstagramIcon size={20} /></a>
             <a href="https://www.facebook.com/CalzoneFinancialSolution/" target="_blank" rel="noopener noreferrer" className="hover:text-[#DB3269] transition-colors"><FacebookIcon size={20} /></a>
             <a href="https://x.com/calzonestartup" target="_blank" rel="noopener noreferrer" className="hover:text-[#DB3269] transition-colors"><TwitterIcon size={20} /></a>
